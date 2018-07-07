@@ -9,6 +9,8 @@
   "author": "Mike Williamson",
   "license": "ISC",
   "devDependencies": {
+    "ts-loader": "^4.4.2",
+    "typescript": "^2.9.2",
     "webpack": "^4.15.1",
     "webpack-cli": "^3.0.8"
   }

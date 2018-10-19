@@ -1,1 +1,1 @@
-alert('Hello from typescript!!');
+alert('Hello from typescript!!!');

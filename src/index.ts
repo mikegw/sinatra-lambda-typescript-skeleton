@@ -1,1 +1,3 @@
-alert('Hello from typescript!');
+const typescriptMessage: string = 'Hello from typescript!'
+
+alert(typescriptMessage);

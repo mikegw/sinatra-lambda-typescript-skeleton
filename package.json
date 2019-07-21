@@ -4,7 +4,8 @@
   "description": "",
   "private": true,
   "scripts": {
-    "test": "mocha -r ts-node/register tests/**/*.spec.ts"
+    "test": "mocha -r ts-node/register tests/**/*.spec.ts",
+    "start:dev": "webpack-dev-server"
   },
   "author": "Mike Williamson",
   "license": "ISC",
@@ -20,6 +21,7 @@
     "typescript": "^2.9.2",
     "typescriptnpm": "^1.0.1",
     "webpack": "^4.15.1",
-    "webpack-cli": "^3.0.8"
+    "webpack-cli": "^3.0.8",
+    "webpack-dev-server": "^3.7.2"
   }
 }

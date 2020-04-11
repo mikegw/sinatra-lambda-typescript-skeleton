@@ -1,0 +1,36 @@
+require: rubocop-rspec
+
+AllCops:
+  TargetRubyVersion: 2.5
+
+Documentation:
+  Enabled: false
+
+Layout/IndentFirstHashElement:
+  EnforcedStyle: consistent
+
+Lint/UnusedMethodArgument:
+  AllowUnusedKeywordArguments: true
+
+Metrics/AbcSize:
+  Exclude:
+    - spec/**/*
+
+Metrics/BlockLength:
+  Exclude:
+    - spec/**/*
+
+Metrics/MethodLength:
+  Exclude:
+    - lambda.rb
+
+RSpec/DescribeClass:
+  Exclude:
+    - spec/features/*
+
+RSpec/MultipleExpectations:
+  Exclude:
+    - spec/features/*
+
+RSpec/ExampleLength:
+  Max: 7

@@ -1,0 +1,21 @@
+#!/bin/bash
+npm install
+webpack
+
+rm .bundle/config
+
+bundle install
+bundle install --deployment --without test development
+
+environment=$1
+if [ "$environment" == "production" ]; then
+  sls deploy --stage production
+elif [ "$environment" == "test" ]; then
+  sls deploy --stage test
+elif [ -z "$environment" ]; then
+  sls deploy --stage staging
+else
+  echo "Invalid environment"
+fi
+
+rm .bundle/config

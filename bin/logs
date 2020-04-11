@@ -1,0 +1,10 @@
+#!/bin/bash
+
+environment=$1
+if [ "$environment" == "production" ]; then
+  sls logs -f lambda -s production
+elif [ -z "$environment" ]; then
+  sls logs -f lambda -s staging
+else
+  echo "Invalid environment"
+fi

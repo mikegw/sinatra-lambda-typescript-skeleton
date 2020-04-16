@@ -23,7 +23,7 @@ def build_sinatra_env(event)
     'SCRIPT_NAME' => '',
     'PATH_INFO' => event['path'] || '',
     'QUERY_STRING' => query_string(event['queryStringParameters']) || '',
-    'SERVER_NAME' => 'localhost',
+    'SERVER_NAME' => event['requestContext']['domainName'] || 'localhost',
     'SERVER_PORT' => 443,
 
     'rack.version' => Rack::VERSION,

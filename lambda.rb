@@ -32,7 +32,7 @@ def build_sinatra_env(event)
     'rack.errors' => $stderr
   }
 
-  event['headers']&.each { |key, value| env[key] = "HTTP_#{value}" }
+  event['headers']&.each { |key, value| env["HTTP_#{key.upcase}"] = value }
   puts env
   env
 end

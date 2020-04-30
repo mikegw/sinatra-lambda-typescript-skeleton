@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-# AWS only supports 2.5.7
-ruby "2.5.7"
+# AWS only supports 2.5.8
+ruby "2.5.8"
 
 source "https://rubygems.org"
 

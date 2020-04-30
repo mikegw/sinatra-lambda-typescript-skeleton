@@ -11,7 +11,7 @@
 
 ## Requirements
 
-- `ruby 2.5.7`
+- `ruby 2.5.8`
 - `bundler`
 - `node 10`
 - `npm`
@@ -21,7 +21,7 @@
 
 To set up, run the following:
 ```
-rvm use 2.5.7
+rvm use 2.5.8
 bundle install
 
 npm install

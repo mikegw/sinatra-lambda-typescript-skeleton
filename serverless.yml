@@ -16,7 +16,7 @@ service: sinatra-lambda # CHANGE ME
 provider:
   name: aws
   stage: ${opt:stage, 'development'}
-  runtime: ruby2.5
+  runtime: ruby2.7
 
   # iamRoleStatements:
   #   - Effect: "Allow"

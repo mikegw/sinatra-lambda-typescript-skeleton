@@ -4,6 +4,7 @@ webpack
 
 rm .bundle/config
 
+bundle lock --add-platform x86_64-linux
 bundle install
 bundle install --deployment --without test development
 

@@ -1,14 +1,15 @@
 # frozen_string_literal: true
 
-# AWS only supports 2.5.7
-ruby "2.5.7"
+# AWS only supports 2.5.7 & 2.7.2
+ruby '2.7.2'
 
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
 git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 
 # gem 'aws-sdk-s3'
 gem 'sinatra'
+gem 'bundler'
 
 group :development, :test do
   gem 'pry'
